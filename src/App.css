@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+:root {
+  --dullyellow: #BFB417;
+  --yellow: #D9CC1E;
+  --brightyellow: #F2E529;
+  --gray: #BFBBBA;
+  --black: #0D0D0D;
+  --border-width: 5px;
+  --textstyle: underline;
+}
+
+body {
+  background-color: grey;
+}
+
+h1 {
+  margin: 32px 0;
+  color: #fff;
+  font-size: 24px;
+}
+
+h3 {
+  margin: auto;
+  color: rgb(66, 171, 231);
+  font-size: 20px;
+}
+
+p {
+  color: var(--black)
+}
+
+.card {
+  background-color: var(--gray);
+  color: var(--black)
+}
+
+.aboutmeheader {
+  color: var(--black)
+}
+
+.aboutmetext {
+  color: var(--black)
+}
+a {
+  margin: 10px;
+  padding: 25px;
+  color: white;
+}
+
+.container-fluid{
+  width: 100vw;
+}
