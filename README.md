@@ -21,6 +21,8 @@
 ## Description <a name='description'></a>
 This project was created to showcase my projects and skills.
 
+The development code for this site can be found in this repo: https://github.com/AlexisGonzalez07/AlexGonzalezPortfolio
+
 ![image](./public/assets/images/portfoliogif.gif)
 
 ## Installation <a name='installation'></a>
