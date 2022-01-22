@@ -61,4 +61,11 @@ a {
 .content-container {
   min-height: calc(100vh - 20px) !important;
   width: 100vw;
+  background-color: black;
 }
+
+.logo {
+  max-width: 50px;
+  max-height: 100px;
+}
+
