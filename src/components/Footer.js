@@ -10,13 +10,13 @@ import {
 
 function Footer() {
   return (
-    <>
+    <> 
       <Segment
         inverted
         vertical
-        style={{ margin: "0em 0em 0em", padding: "0em 0em" }}
+        style={{ margin: "0em 0em 0em", padding: "0em 0em", backgroundColor: "black" }}
       >
-        <Container textAlign="center">
+        <Container textAlign="center" >
           <Grid divided inverted stackable>
             <Grid.Column width={16}>
               <Header inverted as="h4" content="Stay Connected" />

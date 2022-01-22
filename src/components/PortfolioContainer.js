@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import NavTabs from './NavTabs';
 import About from './pages/About';
-// import About from './pages/About';
-import ProjectCards from './pages/projectCards';
 import Contact from './pages/Contact';
+import Home from './pages/Home'
+import ProjectCards from './pages/projectCards';
+import Footer from './Footer'
+import NavTabs from './NavTabs';
 import projects from '../projects';
 import 'semantic-ui-css/semantic.min.css';
-import Footer from './Footer'
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('Home');
@@ -14,15 +14,18 @@ export default function PortfolioContainer() {
   // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
   const renderPage = () => {
     if (currentPage === 'Home') {
+      return <Home />;
+    }
+    if (currentPage === 'About-Me') {
       return <About />;
     }
-    if (currentPage === 'About') {
-      return <About />;
-    }
-    if (currentPage === 'ProjectCards') {
+    if (currentPage === 'My-Projects') {
       return <ProjectCards projects={projects} />;
     }
-    return <Contact />;
+    if (currentPage === 'Contact-Me') {
+      return <Contact />;
+    }
+    return <Home />;
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
