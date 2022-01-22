@@ -3,3 +3,8 @@
     border-color: white;
     color: white;
   }
+
+  #logo {
+    max-width: 50px;
+    max-height: 100px;
+  }

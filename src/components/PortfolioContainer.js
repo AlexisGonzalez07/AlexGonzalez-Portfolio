@@ -4,7 +4,8 @@ import Contact from './pages/Contact';
 import Home from './pages/Home'
 import ProjectCards from './pages/projectCards';
 import Footer from './Footer'
-import NavTabs from './NavTabs';
+// import NavTabs from './NavTabs';
+import Nav from './NavBarTabs';
 import projects from '../projects';
 import 'semantic-ui-css/semantic.min.css';
 import '../App.css';
@@ -17,13 +18,13 @@ export default function PortfolioContainer() {
     if (currentPage === 'Home') {
       return <Home />;
     }
-    if (currentPage === 'About-Me') {
+    if (currentPage === 'About Me') {
       return <About />;
     }
-    if (currentPage === 'My-Projects') {
+    if (currentPage === 'My Projects') {
       return <ProjectCards projects={projects} />;
     }
-    if (currentPage === 'Contact-Me') {
+    if (currentPage === 'Contact Me') {
       return <Contact />;
     }
     return <Home />;
@@ -34,7 +35,7 @@ export default function PortfolioContainer() {
   return (
     <div className='content-container'>
       {/* We are passing the currentPage from state and the function to update it */}
-      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+      <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* Here we are calling the renderPage method which will return a component  */}
       {renderPage()}
       <Footer/>
