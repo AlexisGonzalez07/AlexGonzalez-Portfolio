@@ -53,7 +53,12 @@ a {
   padding: 25px;
   color: white;
 }
-
+/* 
 .container-fluid{
+  width: 100vw;
+} */
+
+.content-container {
+  min-height: calc(100vh - 20px) !important;
   width: 100vw;
 }

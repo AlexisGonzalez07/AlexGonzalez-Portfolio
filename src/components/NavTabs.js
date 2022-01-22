@@ -8,11 +8,12 @@ import "../App.css";
 // We assign them to their own variable names
 function NavTabs({ currentPage, handlePageChange }) {
   return (
+    <div>
     <Navbar
       style={{
         backgroundColor: "black",
-        margin: "0em 0em 0em",
-        padding: "0em 0em",
+        // margin: "0em 0em 0em",
+        // padding: "0em 0em",
       }}
       expand="lg"
     >
@@ -60,6 +61,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    </div>
   );
 }
 
