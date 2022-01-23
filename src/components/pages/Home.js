@@ -1,12 +1,12 @@
 import React from 'react';
-import '../../App.css'
-import companynight from '../../assets/images/alexglz.jpg'
+import '../styles/home.css'
 import Box from "@mui/material/Box";
+import Grid from '@mui/material/Grid'
 
 export default function Home() {
     return (
-      <div style={{ width: "100%", backgroundColor: "black" }}>
-      <Box style={{ backgroundColor: "black" }}
+      <div id='home-div'>
+      <Box  style={{ backgroundColor: "black" }}
                 sx={{
                   display: "flex",
                   flexWrap: "wrap",
@@ -15,7 +15,7 @@ export default function Home() {
                   m: 1,
                 }}
               >
-                <h1>Hello</h1>
+<h1>Hey</h1>
     </Box>
     </div>
     );

@@ -31,7 +31,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           >
             <img
               class="ui fluid image logo"
-              src={alexlogo}
+              src='./assets/images/alexlogo.png'
               alt="Alex Gonzalez"
             />
           </Navbar.Brand>
@@ -42,21 +42,21 @@ function NavTabs({ currentPage, handlePageChange }) {
                 style={{borderColor: "white"}}
                 className="navsegment"
                 href="#About-Me"
-                onClick={() => handlePageChange("About-Me")}
+                onClick={() => handlePageChange("About Me")}
               >
                 About Me{" "}
               </Nav.Link>
               <Nav.Link
                 className="navsegment"
                 href="#My-Projects"
-                onClick={() => handlePageChange("My-Projects")}
+                onClick={() => handlePageChange("My Projects")}
               >
                 My Projects
               </Nav.Link>
               <Nav.Link
                 className="navsegment"
                 href="#Contact-Me"
-                onClick={() => handlePageChange("Contact-Me")}
+                onClick={() => handlePageChange("Contact Me")}
               >
                 Contact Me
               </Nav.Link>

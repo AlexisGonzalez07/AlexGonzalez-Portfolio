@@ -1,12 +1,12 @@
 import React from 'react';
 import '../../App.css'
-import alexglzpicture from '../../assets/images/alexglz.jpg'
+// import alexglzpicture from '../../assets/images/alexglz.jpg'
 
 export default function About() {
   return (
     <div className="row" style={{ backgroundColor: "#EBDBAE" }}>
     <div className="col-sm-12 col-lg-4">
-    <img className="card-img-top" src={alexglzpicture} alt="Alex Gonzalez"/>
+    <img className="card-img-top" src='./assets/images/alexglz.jpg' alt="Alex Gonzalez"/>
     </div>
     <div className="col-sm-12 col-lg-8" align="center">
     <h2>About Me</h2>

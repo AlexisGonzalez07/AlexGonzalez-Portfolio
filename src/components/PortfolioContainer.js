@@ -4,11 +4,11 @@ import Contact from './pages/Contact';
 import Home from './pages/Home'
 import ProjectCards from './pages/projectCards';
 import Footer from './Footer'
-// import NavTabs from './NavTabs';
-import Nav from './NavBarTabs';
+import NavTabs from './NavTabs';
+// import Nav from './NavBarTabs';
 import projects from '../projects';
 import 'semantic-ui-css/semantic.min.css';
-import '../App.css';
+// import '../App.css';
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('Home');
@@ -35,7 +35,7 @@ export default function PortfolioContainer() {
   return (
     <div className='content-container'>
       {/* We are passing the currentPage from state and the function to update it */}
-      <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
+      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* Here we are calling the renderPage method which will return a component  */}
       {renderPage()}
       <Footer/>

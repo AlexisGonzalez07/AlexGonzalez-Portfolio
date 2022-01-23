@@ -4,7 +4,7 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import MenuIcon from "@mui/icons-material/Menu";
+// import MenuIcon from "@mui/icons-material/Menu";
 import Menu from '@mui/material/Menu';
 import Container from "@mui/material/Container";
 // import Link from "@mui/material/Link";
@@ -56,7 +56,7 @@ const Nav = ({ currentPage, handlePageChange }) => {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon />
+              {/* <MenuIcon /> */}
             </IconButton>
                 <Menu id='menu-appbar'
                 anchorEl={anchorElNav}
