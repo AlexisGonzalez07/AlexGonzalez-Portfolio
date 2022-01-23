@@ -4,6 +4,7 @@ import './styles/about.css'
 
 export default function About() {
   return (
+    <div id="about-div">
     <div className="row" style={{ backgroundColor: "#EBDBAE" }}>
     <div className="col-sm-12 col-lg-4">
     <img className="card-img-top" src='./assets/images/alexglz.jpg' alt="Alex Gonzalez"/>
@@ -35,6 +36,7 @@ export default function About() {
             <a href="https://webpack.js.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg" className="icon-skill" alt="webpack" width="50" height="50"/> </a>
            </div>
     </div>
+  </div>
   </div>
   );
 }
