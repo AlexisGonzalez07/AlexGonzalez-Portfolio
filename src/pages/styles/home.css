@@ -10,3 +10,9 @@ h1 {
 #picture-header {
     align-items: center;
 }
+
+#github-card {
+    background-color: black;
+    align-items: center;
+    color: white;
+}
