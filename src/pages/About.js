@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../App.css'
+import './styles/about.css'
 // import alexglzpicture from '../../assets/images/alexglz.jpg'
 
 export default function About() {

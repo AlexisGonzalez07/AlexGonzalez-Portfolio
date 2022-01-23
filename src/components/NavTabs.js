@@ -63,7 +63,7 @@ function NavTabs({ currentPage, handlePageChange }) {
               <Nav.Link
                 style={{ color: "white" }}
                 target="_blank"
-                href="./assets/files/May2021-Resume.pdf"
+                href="./assets/files/AlexisGonzalezJan2022Resume.docx"
                 onClick={() => handlePageChange("Resume")}
               >
                 Resume
