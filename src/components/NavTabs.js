@@ -30,7 +30,7 @@ function NavTabs({ currentPage, handlePageChange }) {
             onClick={() => handlePageChange("Home")}
           >
             <img
-              class="ui fluid image logo"
+              className="ui fluid image logo"
               src='./assets/images/alexlogo.png'
               alt="Alex Gonzalez"
             />
