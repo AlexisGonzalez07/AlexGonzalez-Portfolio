@@ -11,7 +11,6 @@ import Box from "@mui/material/Box";
 // We assign them to their own variable names
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <div>
       <Navbar
         justify
         variant="tabs"
@@ -20,6 +19,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           margin: "0em 0em 0em",
           padding: "0em 0em",
         }}
+        position='static'
         fixed="top"
         expand="lg"
       >
@@ -72,7 +72,6 @@ function NavTabs({ currentPage, handlePageChange }) {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </div>
   );
 }
 

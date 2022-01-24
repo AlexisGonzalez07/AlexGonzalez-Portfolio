@@ -6,6 +6,11 @@
     'Lucida Sans', Arial, sans-serif;
 }
 
+App {
+  width: 100vw;
+  height: 100vh;
+}
+
 :root {
   --dullyellow: #BFB417;
   --yellow: #D9CC1E;
@@ -58,7 +63,7 @@ a {
   width: 100vw;
 }
 
-.content-container {
+#content-container {
   min-height: calc(100vh - 20px) !important;
   width: 100vw;
   background-color: black;
