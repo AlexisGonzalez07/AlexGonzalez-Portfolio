@@ -1,4 +1,7 @@
-.backdrop {
-    width: 100vw;
-    max-height: 900px;
+Accordion {
+    background-color: black;
+}
+
+.title {
+    font-size: 200%;
 }

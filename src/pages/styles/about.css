@@ -5,4 +5,12 @@
 
 .sidebar {
     color: white;
+    align-items: center;
+}
+
+.landing-image {
+    background-image: url('/src/assets/images/austinnightpic.jpg') !important;
+    background-size: cover !important;
+    min-height: 50vh;
+    width: 100vw;
 }

@@ -12,8 +12,8 @@ import { CardActionArea } from '@mui/material';
 const Img = styled("img")({
   margin: "auto",
   display: "block",
-  maxWidth: "80%",
-  maxHeight: "80%",
+  maxWidth: "50%",
+  maxHeight: "50%",
   borderRadius: "60px",
 });
 

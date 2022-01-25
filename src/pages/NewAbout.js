@@ -10,6 +10,7 @@ import LanguagesAndSkills from '../components/LanguagesAndSkills';
 import PersonalInterests from '../components/PersonalInterests';
 import NonCareerRelated from '../components/NonCareer';
 import './styles/about.css'
+import UTPicture from '../assets/images/austinnightpic.jpg'
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -57,7 +58,7 @@ function TabPanel(props) {
   
     return (
       <div id="about-div">
-        <Box
+        <Box 
           style={{ backgroundColor: "black", minHeight: '60vh' }}
           sx={{
             display: "flex",
@@ -67,7 +68,7 @@ function TabPanel(props) {
             m: 1,
           }}
         >
-          <Grid
+          <Grid 
             rowSpacing={1}
             columnSpacing={{ xs: 1, sm: 2, md: 3 }}
             container
@@ -75,10 +76,10 @@ function TabPanel(props) {
             justifyContent="center"
             alignItems="center"
           >
-              <Grid item xs={12} md={3}>
+              <Grid justifyContent='center' item xs={12} md={3}>
         <Tabs
           className='sidebar'
-          style={{justifyContent:'space-evenly' }}
+          style={{alignContent:'center' }}
           orientation="vertical"
           variant="scrollable"
           value={value}
@@ -92,9 +93,9 @@ function TabPanel(props) {
           <Tab style={{color: 'white'}} className='tab' label="Side Projects" {...a11yProps(3)} />
         </Tabs>
         </Grid>
-        <Grid item xs={12} md={9}>
-        <TabPanel  style={{backgroundImage: 'url(./assets/images/austinnightpic.jpg)'}} value={value} index={0}>
-          <Education />
+        <Grid className='landing-image' item xs={12} md={9}>
+        <TabPanel value={value} index={0}>
+          <Education/>
         </TabPanel>
         <TabPanel value={value} index={1}>
           <LanguagesAndSkills/>
