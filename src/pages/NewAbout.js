@@ -88,7 +88,7 @@ function TabPanel(props) {
           sx={{ borderRight: 1, borderColor: 'divider' }}
         >
           <Tab style={{color: 'white'}} className='tab' label="Education" {...a11yProps(0)} />
-          <Tab style={{color: 'white'}} className='tab' label="Languages and Skills" {...a11yProps(1)} />
+          <Tab style={{color: 'white'}} className='tab' label="Technical Skills" {...a11yProps(1)} />
           <Tab style={{color: 'white'}} className='tab' label="Personal Interests" {...a11yProps(2)} />
           <Tab style={{color: 'white'}} className='tab' label="Side Projects" {...a11yProps(3)} />
         </Tabs>
