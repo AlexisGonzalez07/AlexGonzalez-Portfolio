@@ -2,9 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
+import Grid from "@mui/material/Grid";
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-
+import Education from './Education';
+import LanguagesAndSkills from './LanguagesAndSkills'
+import PersonalInterests from './PersonalInterests';
+import NonCareerRelated from './NonCareer';
 import "./styles/Sidebar.css";
 
 
@@ -12,6 +16,8 @@ function TabPanel(props) {
     const { children, value, index, ...other } = props;
   
     return (
+
+
       <div
         role="tabpanel"
         hidden={value !== index}
@@ -49,9 +55,26 @@ function TabPanel(props) {
     };
   
     return (
-      <Box
-        sx={{ flexGrow: 1, bgcolor: 'background.paper', display: 'flex', height: 224 }}
-      >
+      <div id="about-div">
+        <Box
+          style={{ backgroundColor: "black" }}
+          sx={{
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "center",
+            p: 2,
+            m: 1,
+          }}
+        >
+          <Grid
+            rowSpacing={1}
+            columnSpacing={{ xs: 1, sm: 2, md: 3 }}
+            container
+            direction="row"
+            justifyContent="center"
+            alignItems="center"
+          >
+              <Grid item xs={12} md={3}>
         <Tabs
           orientation="vertical"
           variant="scrollable"
@@ -60,35 +83,29 @@ function TabPanel(props) {
           aria-label="Vertical tabs example"
           sx={{ borderRight: 1, borderColor: 'divider' }}
         >
-          <Tab label="Item One" {...a11yProps(0)} />
-          <Tab label="Item Two" {...a11yProps(1)} />
-          <Tab label="Item Three" {...a11yProps(2)} />
-          <Tab label="Item Four" {...a11yProps(3)} />
-          <Tab label="Item Five" {...a11yProps(4)} />
-          <Tab label="Item Six" {...a11yProps(5)} />
-          <Tab label="Item Seven" {...a11yProps(6)} />
+          <Tab className='sidebar' label="Education" {...a11yProps(0)} />
+          <Tab className='sidebar' label="Languages and Skills" {...a11yProps(1)} />
+          <Tab className='sidebar' label="Personal Interests" {...a11yProps(2)} />
+          <Tab className='sidebar' label="Side Projects" {...a11yProps(3)} />
         </Tabs>
+        </Grid>
+        <Grid item xs={12} md={9}>
         <TabPanel value={value} index={0}>
-          Item One
+          <Education/>
         </TabPanel>
         <TabPanel value={value} index={1}>
-          Item Two
+          <LanguagesAndSkills/>
         </TabPanel>
         <TabPanel value={value} index={2}>
-          Item Three
+          <PersonalInterests/>
         </TabPanel>
         <TabPanel value={value} index={3}>
-          Item Four
+          <NonCareerRelated/>
         </TabPanel>
-        <TabPanel value={value} index={4}>
-          Item Five
-        </TabPanel>
-        <TabPanel value={value} index={5}>
-          Item Six
-        </TabPanel>
-        <TabPanel value={value} index={6}>
-          Item Seven
-        </TabPanel>
+        </Grid>
+        </Grid>
       </Box>
+      </div>
+
     );
   }

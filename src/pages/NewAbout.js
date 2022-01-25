@@ -1,36 +1,60 @@
-import React, {useState} from "react";
-import "./styles/about.css";
-import Sidebar from "../components/Sidebar";
-import Box from "@mui/material/Box";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
 import Grid from "@mui/material/Grid";
-import Education from "../components/Education";
-import LanguagesAndSkills from "../components/LanguagesAndSkills";
-import PersonalInterests from "../components/PersonalInterests";
-import NonCareerRelated from "../components/NonCareer";
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+import Education from '../components/Education';
+import LanguagesAndSkills from '../components/LanguagesAndSkills';
+import PersonalInterests from '../components/PersonalInterests';
+import NonCareerRelated from '../components/NonCareer';
+import "../components/styles/Sidebar.css";
 
-export default function NewAbout() {
-    const [currentSection, setCurrentSection] = useState('Education');
 
-    // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
-    const renderSection = () => {
-      if (currentSection === 'Education') {
-        return <Education />;
-      }
-      if (currentSection === 'Languages and Skills') {
-        return <LanguagesAndSkills />;
-      }
-      if (currentSection === 'Personal Interests') {
-        return <PersonalInterests/>;
-      }
-      if (currentSection === 'Non Career Related') {
-        return <NonCareerRelated />;
-      }
-      return <Education />;
+function TabPanel(props) {
+    const { children, value, index, ...other } = props;
+  
+    return (
+
+
+      <div
+        role="tabpanel"
+        hidden={value !== index}
+        id={`vertical-tabpanel-${index}`}
+        aria-labelledby={`vertical-tab-${index}`}
+        {...other}
+      >
+        {value === index && (
+          <Box sx={{ p: 3 }}>
+            <Typography>{children}</Typography>
+          </Box>
+        )}
+      </div>
+    );
+  }
+  
+  TabPanel.propTypes = {
+    children: PropTypes.node,
+    index: PropTypes.number.isRequired,
+    value: PropTypes.number.isRequired,
+  };
+  
+  function a11yProps(index) {
+    return {
+      id: `vertical-tab-${index}`,
+      'aria-controls': `vertical-tabpanel-${index}`,
+    };
+  }
+  
+  export default function NewAbout() {
+    const [value, setValue] = React.useState(0);
+  
+    const handleChange = (event, newValue) => {
+      setValue(newValue);
     };
   
-    const handleSectionChange = (section) => setCurrentSection(section);
-
-  return (
+    return (
       <div id="about-div">
         <Box
           style={{ backgroundColor: "black" }}
@@ -51,13 +75,37 @@ export default function NewAbout() {
             alignItems="center"
           >
               <Grid item xs={12} md={3}>
-                  <Sidebar currentSection={currentSection} handleSectionChange={handleSectionChange}/>
-              </Grid>
-              <Grid item xs={12} md={9}>
-                  {renderSection()}
-              </Grid>
-          </Grid>
-        </Box>
+        <Tabs
+          orientation="vertical"
+          variant="scrollable"
+          value={value}
+          onChange={handleChange}
+          aria-label="Vertical tabs example"
+          sx={{ borderRight: 1, borderColor: 'divider' }}
+        >
+          <Tab className='sidebar' label="Education" {...a11yProps(0)} />
+          <Tab className='sidebar' label="Languages and Skills" {...a11yProps(1)} />
+          <Tab className='sidebar' label="Personal Interests" {...a11yProps(2)} />
+          <Tab className='sidebar' label="Side Projects" {...a11yProps(3)} />
+        </Tabs>
+        </Grid>
+        <Grid item xs={12} md={9}>
+        <TabPanel value={value} index={0}>
+          <Education/>
+        </TabPanel>
+        <TabPanel value={value} index={1}>
+          <LanguagesAndSkills/>
+        </TabPanel>
+        <TabPanel value={value} index={2}>
+          <PersonalInterests/>
+        </TabPanel>
+        <TabPanel value={value} index={3}>
+          <NonCareerRelated/>
+        </TabPanel>
+        </Grid>
+        </Grid>
+      </Box>
       </div>
-  );
-}
+
+    );
+  }
