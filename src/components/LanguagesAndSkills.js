@@ -48,7 +48,7 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   borderTop: "1px solid rgba(0, 0, 0, .125)",
 }));
 
-export default function Education() {
+export default function LanguagesAndSkills() {
   const [expanded, setExpanded] = React.useState("");
 
   const handleChange = (panel) => (event, newExpanded) => {
@@ -99,6 +99,21 @@ export default function Education() {
         <AccordionDetails>
           <Typography>
           Express, React, Node, Handlebars, Query, Bootstrap
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion
+        expanded={expanded === "panel4"}
+        onChange={handleChange("panel4")}
+      >
+        <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
+          <Typography>
+            Currently Learning..
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+          Python, Redux, C#, C+
           </Typography>
         </AccordionDetails>
       </Accordion>
