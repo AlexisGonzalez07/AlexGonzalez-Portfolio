@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import About from '../pages/About';
-import Contact from '../pages/Contact';
 import Home from '../pages/Home'
 import ProjectCards from '../pages/projectCards';
 import Footer from './Footer'
@@ -24,9 +23,6 @@ export default function PortfolioContainer() {
     }
     if (currentPage === 'My Projects') {
       return <ProjectCards projects={projects} />;
-    }
-    if (currentPage === 'Contact Me') {
-      return <Contact />;
     }
     return <Home />;
   };

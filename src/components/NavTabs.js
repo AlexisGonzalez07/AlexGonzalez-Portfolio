@@ -55,13 +55,6 @@ function NavTabs({ currentPage, handlePageChange }) {
                 My Projects
               </Nav.Link>
               <Nav.Link
-                className="navsegment"
-                href="#Contact-Me"
-                onClick={() => handlePageChange("Contact Me")}
-              >
-                Contact Me
-              </Nav.Link>
-              <Nav.Link
                 style={{ color: "white" }}
                 target="_blank"
                 href="./assets/files/AlexisGonzalezJan2022Resume.docx"

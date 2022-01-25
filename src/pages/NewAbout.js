@@ -80,6 +80,7 @@ function TabPanel(props) {
         <Tabs
           className='sidebar'
           style={{alignContent:'center' }}
+          
           orientation="vertical"
           variant="scrollable"
           value={value}
