@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import NavTabs from "./NavTabs";
 import NewAbout from "../pages/NewAbout";
 import projects from "../projects";
+import NewProjectCards from "../pages/NewProjectCards";
 import "semantic-ui-css/semantic.min.css";
 import "../App.css";
 
@@ -20,7 +21,7 @@ export default function PortfolioContainer() {
       return <NewAbout />;
     }
     if (currentPage === "My Projects") {
-      return <ProjectCards projects={projects} />;
+      return <NewProjectCards projects={projects} />;
     }
     return <Home />;
   };

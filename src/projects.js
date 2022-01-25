@@ -11,7 +11,7 @@ const projects=
         "title": "Plant-Buddy",
         "description": "MERN Stack",
         "src": planthub,
-        "website": "https://github.com/AlexisGonzalez07",
+        "website": "https://planth.herokuapp.com/",
         "repo": "https://github.com/nicoledodge/PlantHub"
     },
     {
@@ -25,7 +25,7 @@ const projects=
         "title": "Retail Therapy",
         "description": "CSS/Javascript/APIs",
         "src": retailtherapy,
-        "website": "https://express-gym.herokuapp.com/",
+        "website": "https://mitchell-est-robbins.github.io/Project1-TheAppenders/",
         "repo": "https://github.com/Mitchell-est-Robbins/Project1-TheAppenders"
     },    
     {
@@ -37,17 +37,17 @@ const projects=
     },
     {
         "title": "Project in-Development",
-        "description": "Node/Sequelize/Express/Handlebars",
+        "description": "Coming Soon",
         "src": planthub,
         "website": "https://github.com/AlexisGonzalez07",
-        "repo": "https://github.com/nicoledodge/PlantHub"
+        "repo": "https://github.com/AlexisGonzalez07"
     },
     {
         "title": "Project in-Development",
-        "description": "CSS/Javascript/APIs",
+        "description": "Coming Soon",
         "src": planthub,
         "website": "https://github.com/AlexisGonzalez07",
-        "repo": "https://github.com/nicoledodge/PlantHub"
+        "repo": "https://github.com/AlexisGonzalez07"
         }
 ]
 
