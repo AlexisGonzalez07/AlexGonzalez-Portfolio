@@ -14,6 +14,7 @@ function NavTabs({ currentPage, handlePageChange }) {
       <Navbar
         justify
         variant="tabs"
+        variant='dark'
         style={{
           backgroundColor: "black",
           margin: "0em 0em 0em",
@@ -35,7 +36,7 @@ function NavTabs({ currentPage, handlePageChange }) {
               alt="Alex Gonzalez"
             />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle style={{color: "white"}} aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link

@@ -9,8 +9,7 @@ import Education from '../components/Education';
 import LanguagesAndSkills from '../components/LanguagesAndSkills';
 import PersonalInterests from '../components/PersonalInterests';
 import NonCareerRelated from '../components/NonCareer';
-import "../components/styles/Sidebar.css";
-
+import './styles/about.css'
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -27,7 +26,9 @@ function TabPanel(props) {
       >
         {value === index && (
           <Box sx={{ p: 3 }}>
-            <Typography>{children}</Typography>
+            <Typography
+          >
+                                {children}</Typography>
           </Box>
         )}
       </div>
@@ -57,7 +58,7 @@ function TabPanel(props) {
     return (
       <div id="about-div">
         <Box
-          style={{ backgroundColor: "black" }}
+          style={{ backgroundColor: "black", minHeight: '60vh' }}
           sx={{
             display: "flex",
             flexWrap: "wrap",
@@ -76,6 +77,8 @@ function TabPanel(props) {
           >
               <Grid item xs={12} md={3}>
         <Tabs
+          className='sidebar'
+          style={{justifyContent:'space-evenly' }}
           orientation="vertical"
           variant="scrollable"
           value={value}
@@ -83,15 +86,15 @@ function TabPanel(props) {
           aria-label="Vertical tabs example"
           sx={{ borderRight: 1, borderColor: 'divider' }}
         >
-          <Tab className='sidebar' label="Education" {...a11yProps(0)} />
-          <Tab className='sidebar' label="Languages and Skills" {...a11yProps(1)} />
-          <Tab className='sidebar' label="Personal Interests" {...a11yProps(2)} />
-          <Tab className='sidebar' label="Side Projects" {...a11yProps(3)} />
+          <Tab style={{color: 'white'}} className='tab' label="Education" {...a11yProps(0)} />
+          <Tab style={{color: 'white'}} className='tab' label="Languages and Skills" {...a11yProps(1)} />
+          <Tab style={{color: 'white'}} className='tab' label="Personal Interests" {...a11yProps(2)} />
+          <Tab style={{color: 'white'}} className='tab' label="Side Projects" {...a11yProps(3)} />
         </Tabs>
         </Grid>
         <Grid item xs={12} md={9}>
-        <TabPanel value={value} index={0}>
-          <Education/>
+        <TabPanel  style={{backgroundImage: 'url(./assets/images/austinnightpic.jpg)'}} value={value} index={0}>
+          <Education />
         </TabPanel>
         <TabPanel value={value} index={1}>
           <LanguagesAndSkills/>
