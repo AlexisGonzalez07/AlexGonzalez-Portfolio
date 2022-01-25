@@ -2,10 +2,8 @@ import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import alexlogo from "../assets/images/alexlogo.png";
 import "../App.css";
 import "./styles/NavBar.css";
-import Box from "@mui/material/Box";
 
 // Here we are using object destructuring assignment to pluck off our variables from the props object
 // We assign them to their own variable names

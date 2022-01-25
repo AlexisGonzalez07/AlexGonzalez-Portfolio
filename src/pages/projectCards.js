@@ -57,7 +57,7 @@ export default function ProjectCards({ projects }) {
                   textAlign="center"
                   mobile={16}
                   tablet={8}
-                  computer={8}
+                  computer={3}
                 >
                   <Card
                     key={i}
@@ -135,28 +135,6 @@ export default function ProjectCards({ projects }) {
                           </a>
                           </List.Item>
                           </List>
-                        {/* </div> */}
-                        
-                        {/* <div style={{ textAlign: "center" }}>
-                          <Button
-                            className="removegardenbtn"
-                            icon
-                            as='a'
-                            labelPosition="left"
-                            primary
-                            size="small"
-                            style={{ backgroundColor: "#4f5902", marginTop: '10px' }}
-                            // onClick={async () => {
-                            //     await handleDeletePlant(plant._id)
-                            //     await refetch()
-                            // }}
-                          >
-                            <Icon name="circle" />
-                            <Typography variant="body1" color="white">
-                              View Reporistory
-                            </Typography>
-                          </Button>
-                        </div> */}
                       </CardContent>
                     </CardActionArea>
                   </Card>

@@ -38,21 +38,9 @@ h3 {
 }
 
 p {
-  color: var(--black)
+  color: white
 }
 
-.card {
-  background-color: var(--gray);
-  color: var(--black)
-}
-
-.aboutmeheader {
-  color: var(--black)
-}
-
-.aboutmetext {
-  color: var(--black)
-}
 a {
   margin: 10px;
   padding: 25px;
@@ -66,7 +54,7 @@ a {
 }
 
 #page-container {
-  margin-top: 130px;
+  margin-top: 125px;
 }
 
 .logo {
