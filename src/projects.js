@@ -2,6 +2,7 @@
 import expressgym from './assets/images/expressgym.gif'
 import noteTaker from './assets/images/notetakerapp.gif'
 import retailtherapy from './assets/images/retailtherapy.gif'
+import planthub from './assets/images/planthub.gif'
 
 
 const projects=
@@ -9,7 +10,7 @@ const projects=
     {
         "title": "Plant-Buddy",
         "description": "MERN Stack",
-        "src": retailtherapy,
+        "src": planthub,
         "website": "https://github.com/AlexisGonzalez07",
         "repo": "https://github.com/nicoledodge/PlantHub"
     },
@@ -37,14 +38,14 @@ const projects=
     {
         "title": "Project in-Development",
         "description": "Node/Sequelize/Express/Handlebars",
-        "src": expressgym,
+        "src": planthub,
         "website": "https://github.com/AlexisGonzalez07",
         "repo": "https://github.com/nicoledodge/PlantHub"
     },
     {
         "title": "Project in-Development",
         "description": "CSS/Javascript/APIs",
-        "src": expressgym,
+        "src": planthub,
         "website": "https://github.com/AlexisGonzalez07",
         "repo": "https://github.com/nicoledodge/PlantHub"
         }
