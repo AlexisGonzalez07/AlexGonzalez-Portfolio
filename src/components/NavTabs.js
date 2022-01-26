@@ -12,9 +12,8 @@ import "./styles/NavBar.css";
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <Navbar
-      justify
-      variant="tabs"
-      variant="dark"
+      justify='true'
+      variant="dark tabs"
       style={{
         backgroundColor: "black",
         margin: "0em 0em 0em",

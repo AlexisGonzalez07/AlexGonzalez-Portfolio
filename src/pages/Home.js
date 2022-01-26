@@ -18,42 +18,6 @@ const Img = styled("img")({
 });
 
 export default function Home() {
-  const [name, setName] = useState("");
-  const [username, setUsername] = useState("");
-  const [profilepicture, setProfilepicture] = useState("");
-  const [bio, setBio] = useState("");
-  const [following, setFollowing] = useState("");
-  const [followers, setFollowers] = useState("");
-  const [repos, setRepos] = useState("");
-  const [gists, setGists] = useState("");
-
-  useEffect(() => {
-    fetch(`https://api.github.com/users/AlexisGonzalez07`)
-      .then((res) => res.json())
-      .then((data) => setData(data));
-  }, []);
-
-  // (setData(data))
-  const setData = ({
-    name,
-    login,
-    avatar_url,
-    bio,
-    following,
-    followers,
-    public_gists,
-    public_repos,
-  }) => {
-    setName(name);
-    setUsername(login);
-    setProfilepicture(avatar_url);
-    setBio(bio);
-    setFollowing(following);
-    setFollowers(followers);
-    setRepos(public_repos);
-    setGists(public_gists);
-  };
-
   return (
     <>
       <div id="home-div">

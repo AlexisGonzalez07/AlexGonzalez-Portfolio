@@ -2,23 +2,15 @@ import React from "react";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardActions from "@material-ui/core/CardActions";
 import makeStyles from "@material-ui/core/styles/makeStyles";
-import CardActionArea from "@material-ui/core/CardActionArea";
 import { Container } from "semantic-ui-react";
 
-import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
-import ArrowForwardIosSharpIcon from "@material-ui/icons/ArrowForwardIosSharp";
-// import SendIcon from "@mui/icons-material/Send";
-import Stack from "@mui/material/Stack";
 import "./styles/projectCard.css";
 
 import {
   FiCard,
-  FiCardActionArea,
+  // FiCardActionArea,
   FiCardActions,
   FiCardContent,
   FiCardMedia,
@@ -67,9 +59,6 @@ const useStyles = makeStyles({
     border: "2px",
     justifyContent: "space-between",
     padding: 0,
-  },
-  fiCardContentTextSecondary: {
-    color: "white",
   },
   fiCardContentTextSecondary: {
     color: "white",

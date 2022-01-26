@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Home from "../pages/Home";
-import ProjectCards from "../pages/projectCards";
 import Footer from "./Footer";
 import NavTabs from "./NavTabs";
 import NewAbout from "../pages/NewAbout";

@@ -7,7 +7,7 @@ import MuiAccordion from "@mui/material/Accordion";
 import MuiAccordionSummary from "@mui/material/AccordionSummary";
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
-import Icon from "@mui/material/Icon";
+// import Icon from "@mui/material/Icon";
 import ArrowForwardIosSharpIcon from "@material-ui/icons/ArrowForwardIosSharp";
 // import ExpandCircleDownSharpIcon from '@mui/icons-material/ExpandCircleDownSharp';
 import "./styles/Education.css";

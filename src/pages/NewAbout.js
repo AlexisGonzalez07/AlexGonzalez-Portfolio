@@ -10,7 +10,7 @@ import LanguagesAndSkills from "../components/LanguagesAndSkills";
 import PersonalInterests from "../components/PersonalInterests";
 import NonCareerRelated from "../components/NonCareer";
 import "./styles/about.css";
-import UTPicture from "../assets/images/austinnightpic.jpg";
+// import UTPicture from "../assets/images/austinnightpic.jpg";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
