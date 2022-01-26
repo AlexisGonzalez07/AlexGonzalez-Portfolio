@@ -1,10 +1,53 @@
 .navsegment {
-    border: 10px;
-    border-color: white;
-    color: white;
-  }
+  border: 10px;
+  border-color: white;
+  color: white;
+}
 
-  #logo {
-    max-width: 50px;
-    max-height: 100px;
-  }
+.basic-navbar-nav {
+  align-items: center;
+  justify-content: center;
+}
+
+#logo {
+  max-width: 150px;
+  max-height: 110px;
+}
+.nav-tab {
+  display: inline-block;
+  justify-content: right;
+  text-align: right;
+  color: white;
+  border: white dashed .05px;
+}
+
+.show {
+  justify-content: right;
+}
+
+.me-auto {
+  justify-content: center;
+}
+
+
+.logo:hover {
+  transform:scale(3);
+  -ms-transform:scale(3); /* IE 9 */
+  -moz-transform:scale(2); /* Firefox */
+  -webkit-transform:scale(3); /* Safari and Chrome */
+  -o-transform:scale(3); /* Opera */
+}
+
+.logo {
+  transform:scale(2);
+  -ms-transform:scale(2); /* IE 9 */
+  -moz-transform:scale(2); /* Firefox */
+  -webkit-transform:scale(2); /* Safari and Chrome */
+  -o-transform:scale(2); /* Opera */
+}
+
+.nav-link {
+font-size: 150%;
+color: white;
+text-decoration: firebrick;
+}

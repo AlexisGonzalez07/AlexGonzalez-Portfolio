@@ -36,14 +36,14 @@ const projects=
         "repo": "https://github.com/AlexisGonzalez07/NoteTakingFullStackApplication"
     },
     {
-        "title": "Project in-Development",
+        "title": "In-Development",
         "description": "Coming Soon",
         "src": planthub,
         "website": "https://github.com/AlexisGonzalez07",
         "repo": "https://github.com/AlexisGonzalez07"
     },
     {
-        "title": "Project in-Development",
+        "title": "In-Development",
         "description": "Coming Soon",
         "src": planthub,
         "website": "https://github.com/AlexisGonzalez07",

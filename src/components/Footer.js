@@ -4,67 +4,98 @@ import { Container, Grid, Header, List, Segment } from "semantic-ui-react";
 
 function Footer() {
   return (
-    <>
-      <Segment
-        inverted
-        vertical
-        style={{
-          margin: "0em 0em 0em",
-          padding: "0em 0em",
-          backgroundColor: "black",
-        }}
-      >
-        <Container textAlign="center">
-          <Grid divided inverted stackable>
-            <Grid.Column width={16}>
-              <Header inverted as="h4" content="Stay Connected" />
-              <List style={{justifyItems: 'space-between'}} horizontal>
-                <List.Item
-                  icon="linkedin"
-                  content={
-                    <a
-                      style={{ color: "white", marginTop: "10px" }}
-                      href="https://www.linkedin.com/in/alexis-gonzalez-07/"
-                      target={"_blank"}
+    <Segment
+      inverted
+      vertical
+      style={{
+        margin: "5em 0em 0em",
+        padding: "0em 0em",
+        textAlign: "center",
+        backgroundColor: "black",
+      }}
+    >
+      <Container textAlign="center">
+        <Grid divided inverted stackable>
+          <Grid.Column width={16}>
+            <Header inverted as="h2" content="Stay Connected" />
+          </Grid.Column>
+        </Grid>
+
+        <Grid divided inverted columns="equal">
+          <Grid.Column>
+            <List style={{ textAlign: "center" }} horizontal>
+              <List.Item
+                icon="linkedin"
+                content={
+                  <a
+                    style={{ color: "white" }}
+                    href="https://www.linkedin.com/in/alexis-gonzalez-07/"
+                    target={"_blank"}
+                    rel="noreferrer"
+                  >
+                    <br></br>
+                    <p
+                      style={{
+                        color: "white",
+                        textAlign: "center",
+                        fontSize: "150%",
+                      }}
                     >
-                      LinkedIn Profile
-                    </a>
-                  }
-                />
-                <List.Item
-                  icon="github"
-                  content={
-                    <a
-                      style={{ color: "white", marginTop: "10px" }}
-                      href="https://github.com/AlexisGonzalez07"
-                      target={"_blank"}
+                      LinkedIn
+                    </p>
+                  </a>
+                }
+              />
+            </List>
+          </Grid.Column>
+
+          <Grid.Column>
+            <List style={{ textAlign: "center" }} horizontal>
+              <List.Item
+                icon="github"
+                content={
+                  <a
+                    style={{ color: "white" }}
+                    href="https://github.com/AlexisGonzalez07"
+                    target={"_blank"}
+                    rel="noreferrer"
+                  >
+                    <br></br>
+                    <p
+                      style={{
+                        color: "white",
+                        textAlign: "center",
+                        fontSize: "150%",
+                      }}
                     >
-                      My Github
-                    </a>
-                  }
-                />
-                <List.Item
-                  style={{ color: "white", marginTop: "10px" }}
-                  icon="marker"
-                  content="Houston, TX"
-                />
-                <List.Item
-                  icon="mail"
-                  content={
-                    <a
-                      style={{ color: "white", marginTop: "10px" }}
-                      href="mailto:alexis.gonzalez07@gmail.com"
-                    >
-                      alexis.gonzalez07@gmail.com
-                    </a>
-                  }
-                />
-              </List>
-            </Grid.Column>
-          </Grid>
-        </Container>
-      </Segment>
-    </>
+                      Github
+                    </p>
+                  </a>
+                }
+              />
+            </List>
+          </Grid.Column>
+
+          <Grid.Column>
+            <List style={{ textAlign: "center" }} horizontal>
+              <List.Item
+                icon="mail"
+                content={
+                  <a
+                    style={{ color: "white" }}
+                    href="mailto:alexis.gonzalez07@gmail.com"
+                  >
+                    <br></br>
+                    <p style={{ color: "white", textAlign: "center", fontSize: '150%' }}>
+                      Email</p>
+                  </a>
+                }
+              />
+            </List>
+          </Grid.Column>
+        </Grid>
+      </Container>
+    </Segment>
   );
 }
 
