@@ -71,22 +71,7 @@ export default function Home() {
                   fontSize: "18px",
                 }}
               >
-                After years of learning modeling and optimization in Excel, I
-                knew I had a great understanding of how to organize, manipulate,
-                and analyze data. I always had an interest for coding and web
-                design, so last year I decided to learn the skillset necessary
-                in order to become a web developer. I've put in the work, and
-                I'm currently looking for full-time opportunities as a full
-                stack web developer. I strive to deliver great user experiences
-                in all my applications, which is why I take pride in the fact
-                that I meticulously think about my code and application
-                structure before I type a single line of code. I have a great
-                understanding of the Model-View-Controller (MVC) software design
-                pattern, and I leverage that knowledge to create organized,
-                well-structured applications that are easy for other coders to
-                dissect. This style of programming has enabled me to become a
-                great collaborator, and it's a skill that I continue to work on
-                and improve daily.
+                Passionate and solutions-driven Full Stack Web Developer with a background in data modeling, optimization, and inventory management. Looking to develop autonomous business management solutions and improve current database management systems. Driven, collaborative, and effective leader with a proven ability to thrive in collaborative environments. My most recent and successful project was a plant tracking application built using MongoDB, React, and GraphQL. Hoping to leverage my software and business skills to create innovative tools.
               </Typography>
             </Grid>
           </Grid>
