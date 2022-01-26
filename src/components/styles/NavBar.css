@@ -32,19 +32,19 @@
 
 
 .logo:hover {
-  transform:scale(3);
-  -ms-transform:scale(3); /* IE 9 */
-  -moz-transform:scale(2); /* Firefox */
-  -webkit-transform:scale(3); /* Safari and Chrome */
-  -o-transform:scale(3); /* Opera */
-}
-
-.logo {
-  transform:scale(2);
+  transform:scale(1);
   -ms-transform:scale(2); /* IE 9 */
   -moz-transform:scale(2); /* Firefox */
   -webkit-transform:scale(2); /* Safari and Chrome */
   -o-transform:scale(2); /* Opera */
+}
+
+.logo {
+  transform:scale(1.5);
+  -ms-transform:scale(1.5); /* IE 9 */
+  -moz-transform:scale(1.5); /* Firefox */
+  -webkit-transform:scale(1.5); /* Safari and Chrome */
+  -o-transform:scale(1.5); /* Opera */
 }
 
 .nav-link {
