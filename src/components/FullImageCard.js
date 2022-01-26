@@ -21,7 +21,7 @@ export const FiCardActionArea = withStyles({
 export const FiCardActions = withStyles({
   root: {
     position: "relative",
-    color: "white"
+    color: "white",
   },
 })(CardActions);
 
@@ -43,11 +43,12 @@ export const FiCardMedia = withStyles({
   },
 })(CardMedia);
 
+const cardObject = {
+    FiCard,
+    FiCardActionArea,
+    FiCardActions,
+    FiCardContent,
+    FiCardMedia,}
+
 // --- Exports --- //
-export default {
-  FiCard,
-  FiCardActionArea,
-  FiCardActions,
-  FiCardContent,
-  FiCardMedia,
-};
+export default cardObject

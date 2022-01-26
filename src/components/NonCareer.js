@@ -64,7 +64,7 @@ export default function NonCareerRelated() {
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
         <Typography
             gutterBottom
-            variant="p"
+            variant="div"
             component="div"
             // id="personal-statement"
             style={{
@@ -81,7 +81,7 @@ export default function NonCareerRelated() {
         <AccordionDetails>
         <Typography
             gutterBottom
-            variant="p"
+            variant="div"
             component="div"
             // id="personal-statement"
             style={{
@@ -114,7 +114,7 @@ export default function NonCareerRelated() {
         <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
           <Typography
             gutterBottom
-            variant="p"
+            variant="div"
             component="div"
             // id="personal-statement"
             style={{
@@ -132,7 +132,7 @@ export default function NonCareerRelated() {
         <AccordionDetails>
         <Typography
             gutterBottom
-            variant="p"
+            variant="div"
             component="div"
             // id="personal-statement"
             style={{
@@ -165,7 +165,7 @@ export default function NonCareerRelated() {
         <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
         <Typography
             gutterBottom
-            variant="p"
+            variant="div"
             component="div"
             // id="personal-statement"
             style={{
@@ -182,7 +182,7 @@ Organizational Behavior Consulting Project for Dell Medical School - 2018       
         <AccordionDetails>
         <Typography
             gutterBottom
-            variant="p"
+            variant="div"
             component="div"
             // id="personal-statement"
             style={{

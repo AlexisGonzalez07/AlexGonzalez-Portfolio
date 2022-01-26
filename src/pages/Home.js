@@ -1,13 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./styles/home.css";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import { styled } from "@mui/material/styles";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea } from "@mui/material";
 
 const Img = styled("img")({
   margin: "auto",

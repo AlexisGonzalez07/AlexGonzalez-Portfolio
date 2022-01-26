@@ -7,14 +7,15 @@ import { Container } from "semantic-ui-react";
 
 import Button from "@mui/material/Button";
 import "./styles/projectCard.css";
+import cardObject from "../components/FullImageCard";
 
-import {
-  FiCard,
-  // FiCardActionArea,
-  FiCardActions,
-  FiCardContent,
-  FiCardMedia,
-} from "../components/FullImageCard";
+// import {
+//   FiCard,
+//   // FiCardActionArea,
+//   FiCardActions,
+//   FiCardContent,
+//   FiCardMedia,
+// } from "../components/FullImageCard";
 
 // --- Style --- //
 const useStyles = makeStyles({
@@ -113,16 +114,16 @@ export default function NewProjectCards({ projects }) {
             </Typography>
           </Grid>
           {projects.map((work, i) => (
-            <Grid justifyContent="center" item xs={12} sm={6} md={4}>
+            <Grid key={i} justifyContent="center" item xs={12} sm={6} md={4}>
               <Box my={2} justifyContent="center">
-                <FiCard className={classes.card}>
-                  <FiCardMedia
+                <cardObject.FiCard className={classes.card}>
+                  <cardObject.FiCardMedia
                     media="picture"
                     alt="Contemplative Reptile"
                     image={work.src}
                     title="Contemplative Reptile"
                   />
-                  <FiCardContent className={classes.fiCardContent}>
+                  <cardObject.FiCardContent className={classes.fiCardContent}>
                     <div className="card-title">
                       <Typography
                         style={{
@@ -156,10 +157,10 @@ export default function NewProjectCards({ projects }) {
                         {work.description}
                       </Typography>
                     </div>
-                  </FiCardContent>
-                  <FiCardActions className={classes.fiCardContent}>
+                  </cardObject.FiCardContent>
+                  <cardObject.FiCardActions className={classes.fiCardContent}>
                     <a
-                      class="card-button"
+                      className="card-button"
                       id="left-button"
                       target="_blank"
                       rel="noreferrer"
@@ -174,7 +175,7 @@ export default function NewProjectCards({ projects }) {
                       </Button>
                     </a>
                     <a
-                      class="card-button"
+                      className="card-button"
                       id="right-button"
                       target="_blank"
                       rel="noreferrer"
@@ -188,8 +189,8 @@ export default function NewProjectCards({ projects }) {
                         Repo
                       </Button>
                     </a>
-                  </FiCardActions>
-                </FiCard>
+                  </cardObject.FiCardActions>
+                </cardObject.FiCard>
               </Box>
             </Grid>
           ))}

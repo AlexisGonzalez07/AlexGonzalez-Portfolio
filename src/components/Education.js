@@ -64,7 +64,7 @@ export default function Education() {
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
           <Typography
                       gutterBottom
-                      variant="p"
+                      variant="div"
                       component="div"
                       // id="personal-statement"
                       style={{
@@ -82,7 +82,7 @@ export default function Education() {
         <AccordionDetails>
           <Typography
                       gutterBottom
-                      variant="p"
+                      variant="div"
                       component="div"
                       // id="personal-statement"
                       style={{
@@ -123,7 +123,7 @@ export default function Education() {
 
         <Typography
                       gutterBottom
-                      variant="p"
+                      variant="div"
                       component="div"
                       // id="personal-statement"
                       style={{
@@ -140,7 +140,7 @@ export default function Education() {
         <AccordionDetails>
         <Typography
                       gutterBottom
-                      variant="p"
+                      variant="div"
                       component="div"
                       // id="personal-statement"
                       style={{
