@@ -30,7 +30,8 @@ const useStyles = makeStyles({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    justifyContent: "center",
+    // Here is where I changed title and content location
+    justifyContent: "left",
   },
   /**
    * Max Card with for demo
@@ -38,6 +39,7 @@ const useStyles = makeStyles({
    */
   card: {
     maxWidth: 345,
+    borderRadius: 15,
   },
 
   /**
@@ -45,7 +47,7 @@ const useStyles = makeStyles({
    * Same vale used in Material-ui Card Demos
    */
   media: {
-    height: 140,
+    height: 100,
   },
 
   /**
@@ -53,15 +55,24 @@ const useStyles = makeStyles({
    * May verry on implementation
    */
   fiCardContent: {
-    color: "#ffffff",
+    color: "white",
     backgroundColor: "rgba(0,0,0,.24)",
     border: "2px",
+    alignContent: "center",
+    padding: 0,
+  },
+  fiCardActions: {
+    color: "white",
+    backgroundColor: "rgba(0,0,0,.24)",
+    border: "2px",
+    justifyContent: "space-between",
+    padding: 0,
   },
   fiCardContentTextSecondary: {
-    color: "rgba(255,255,255,0.78)",
+    color: "white",
   },
   fiCardContentTextSecondary: {
-    color: "rgba(255,255,255,0.78)",
+    color: "white",
   },
 });
 
@@ -70,83 +81,131 @@ export default function NewProjectCards({ projects }) {
 
   return (
     <Container textAlign="center">
-    <Box
-      style={{
-        backgroundColor: "black",
-        minHeight: "80vh",
-        display: "flex",
-        flexWrap: "wrap",
-        justifyContent: "center",
-        p: 2,
-        m: 1,
-      }}
-      sx={{
-        display: "flex",
-        flexWrap: "wrap",
-        justifyContent: "center",
-        p: 2,
-        m: 1,
-      }}
-    >
-      <Grid
-        rowSpacing={1}
-        columnSpacing={{ xs: 1, sm: 2, md: 3 }}
-        container
-        direction="row"
-        justifyContent="center"
-        alignItems="center"
+      <Box
+        style={{
+          backgroundColor: "black",
+          minHeight: "70vh",
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          p: 2,
+          m: 1,
+        }}
+        sx={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          p: 2,
+          m: 1,
+        }}
       >
-        <Grid item xs={12} justifyContent="center">
-          <h1>My Projects</h1>
-        </Grid>
-        {projects.map((work, i) => (
-          <Grid justifyContent="center" item xs={12} sm={6} md={4}>
-            <Box my={2} justifyContent="center">
-              <FiCard className={classes.card}>
-                <FiCardMedia
-                  media="picture"
-                  alt="Contemplative Reptile"
-                  image={work.src}
-                  title="Contemplative Reptile"
-                />
-                <FiCardContent className={classes.fiCardContent}>
-                  <div className="card-title">
-                    <Typography
-                      style={{ color: "black" }}
-                      gutterBottom
-                      variant="h4"
-                      component="h2"
-                    >
-                      {work.title}
-                    </Typography>
-                  </div>
-                  <Typography
-                    style={{ color: "black" }}
-                    variant="body2"
-                    className={classes.fiCardContentTextSecondary}
-                    component="p"
-                  >
-                    {work.description}
-                  </Typography>
-                </FiCardContent>
-                <FiCardActions className={classes.fiCardContent}>
-                  <a target="_blank" rel="noreferrer" href={work.website}>
-                    <Button size="small" color="inherit" variant="outlined">
-                      View Deployed App
-                    </Button>
-                  </a>
-                  <a target="_blank" rel="noreferrer" href={work.repo}>
-                    <Button size="small" color="inherit" variant="outlined">
-                      View Repo
-                    </Button>
-                  </a>
-                </FiCardActions>
-              </FiCard>
-            </Box>
+        <Grid
+          rowSpacing={1}
+          columnSpacing={{ xs: 1, sm: 2, md: 2 }}
+          container
+          direction="row"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <Grid item xs={12} justifyContent="center">
+            <Typography
+              gutterBottom
+              variant="h4"
+              component="div"
+              style={{
+                textAlign: "center",
+                fontFamily: "Monospace, sans-serif",
+                color: "white",
+                letterSpacing: "10",
+                fontWeight: "bold",
+              }}
+            >
+              MY PROJECTS
+            </Typography>
           </Grid>
-        ))}
-      </Grid>
-    </Box>
+          {projects.map((work, i) => (
+            <Grid justifyContent="center" item xs={12} sm={6} md={4}>
+              <Box my={2} justifyContent="center">
+                <FiCard className={classes.card}>
+                  <FiCardMedia
+                    media="picture"
+                    alt="Contemplative Reptile"
+                    image={work.src}
+                    title="Contemplative Reptile"
+                  />
+                  <FiCardContent className={classes.fiCardContent}>
+                    <div className="card-title">
+                      <Typography
+                        style={{
+                          color: "white",
+                          display: "inline-flex",
+                          border: "black dashed .2px",
+                          textAlign: "left",
+                          backgroundColor: "black",
+                          opacity: "70%",
+                        }}
+                        gutterBottom
+                        variant="h4"
+                        component="div"
+                      >
+                        {work.title}
+                      </Typography>
+                      <br></br>
+                      <Typography
+                        style={{
+                          color: "white",
+                          display: "inline-flex",
+                          border: "black dashed .2px",
+                          textAlign: "left",
+                          backgroundColor: "black",
+                          opacity: "70%",
+                        }}
+                        variant="body2"
+                        className={classes.fiCardContentTextSecondary}
+                        component="div"
+                      >
+                        {work.description}
+                      </Typography>
+                    </div>
+                  </FiCardContent>
+                  <FiCardActions className={classes.fiCardContent}>
+                    <a
+                      class="card-button"
+                      id="left-button"
+                      target="_blank"
+                      rel="noreferrer"
+                      href={work.website}
+                    >
+                      <Button
+                        size="large"
+                        variant="contained"
+                        style={{ color: "white" }}
+                      >
+                        App
+                      </Button>
+                    </a>
+                    <a
+                      class="card-button"
+                      id="right-button"
+                      target="_blank"
+                      rel="noreferrer"
+                      href={work.repo}
+                    >
+                      <Button
+                        size="large"
+                        variant="contained"
+                        style={{ color: "white" }}
+                      >
+                        Repo
+                      </Button>
+                    </a>
+                  </FiCardActions>
+                </FiCard>
+              </Box>
+            </Grid>
+          ))}
+        </Grid>
+      </Box>
     </Container>
   );
 }

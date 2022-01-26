@@ -3,9 +3,9 @@ h1 {
     text-align: center;
 }
 
-/* #home-div {
-    margin-top: 130px;
-} */
+#home-div {
+    margin-top: 120px;
+}
 
 #picture-header {
     align-items: center;
@@ -16,3 +16,8 @@ h1 {
     align-items: center;
     color: white;
 }
+
+#personal-statement {
+    letter-spacing:4px;
+}
+

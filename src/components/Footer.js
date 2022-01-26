@@ -10,8 +10,11 @@ function Footer() {
       style={{
         margin: "5em 0em 0em",
         padding: "0em 0em",
+        paddingTop: '15px',
         textAlign: "center",
         backgroundColor: "black",
+        borderTop: '1px #77B9F2 dashed'
+
       }}
     >
       <Container textAlign="center">

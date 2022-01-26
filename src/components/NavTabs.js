@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
+import Typography from "@mui/material/Typography";
+
 import "../App.css";
 import "./styles/NavBar.css";
 
@@ -19,6 +21,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         padding: "0em 0em",
         justifyContent: "space-evenly",
         color: "white",
+        borderBottom: '1px #77B9F2 dashed'
       }}
       position="static"
       fixed="top"
@@ -48,7 +51,20 @@ function NavTabs({ currentPage, handlePageChange }) {
                 href="#About-Me"
                 onClick={() => handlePageChange("About Me")}
               >
-                About Me{" "}
+                      <Typography
+                      gutterBottom
+                      variant="h4"
+                      component="div"
+                      style={{
+                        textAlign: "center",
+                        fontFamily: "Monospace, sans-serif",
+                        color: "white",
+                        letterSpacing: '10',
+                        fontWeight: 'bold'
+                      }}
+                    >
+                     ABOUT ME
+                    </Typography>
               </Nav.Link>
             </div>
             <div className="nav-tab">
@@ -57,8 +73,20 @@ function NavTabs({ currentPage, handlePageChange }) {
                 href="#My-Projects"
                 onClick={() => handlePageChange("My Projects")}
               >
-                My Projects
-              </Nav.Link>
+<Typography
+                      gutterBottom
+                      variant="h4"
+                      component="div"
+                      style={{
+                        textAlign: "center",
+                        fontFamily: "Monospace, sans-serif",
+                        color: "white",
+                        letterSpacing: '10',
+                        fontWeight: 'bold'
+                      }}
+                    >
+                     MY PROJECTS
+                    </Typography>              </Nav.Link>
             </div>
             <div className="nav-tab">
               <Nav.Link
@@ -66,8 +94,20 @@ function NavTabs({ currentPage, handlePageChange }) {
                 href="./assets/files/AlexisGonzalezJan2022Resume.docx"
                 onClick={() => handlePageChange("Resume")}
               >
-                Resume
-              </Nav.Link>
+<Typography
+                      gutterBottom
+                      variant="h4"
+                      component="div"
+                      style={{
+                        textAlign: "center",
+                        fontFamily: "Monospace, sans-serif",
+                        color: "white",
+                        letterSpacing: '10',
+                        fontWeight: 'bold'
+                      }}
+                    >
+                     RESUME
+                    </Typography>              </Nav.Link>
             </div>
           </Nav>
         </Navbar.Collapse>

@@ -62,13 +62,38 @@ export default function Education() {
         onChange={handleChange("panel1")}
       >
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-          <Typography>
-            The University of Texas at Austin Coding Bootcamp
-          </Typography>
+          <Typography
+                      gutterBottom
+                      variant="p"
+                      component="div"
+                      // id="personal-statement"
+                      style={{
+                        textAlign: "left",
+                        fontFamily: "Montserrat",
+                        color: "black",
+                        fontWeight: 'bold',
+                        fontSize: '18px'
+                      }}
+                      >
+                      The University of Texas at Austin Coding Bootcamp
+                    </Typography>
+
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-            September 2021 - December 2021
+          <Typography
+                      gutterBottom
+                      variant="p"
+                      component="div"
+                      // id="personal-statement"
+                      style={{
+                        textAlign: "left",
+                        fontFamily: "Montserrat",
+                        color: "black",
+                        fontSize: '15px'
+                      }}
+                    >
+                   
+                   September 2021 - December 2021
             <br />I recently obtained a certificate from the Coding Bootcamp at
             the University of Texas at Austin in December of 2021. I'm so
             excited to take the skills I developed in those three months to the
@@ -85,8 +110,9 @@ export default function Education() {
             Express, SQL, React, MongoDB, RESTful APIs and other beautiful
             things in software development, but there's still Python, C, C#,
             Swift and other languages to learn - not to mention the thousands of
-            component libraries and front-end frameworks out in the wild.
-          </Typography>
+            component libraries and front-end frameworks out in the wild.          
+                    </Typography>
+
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -94,21 +120,47 @@ export default function Education() {
         onChange={handleChange("panel2")}
       >
         <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-          <Typography>
+
+        <Typography
+                      gutterBottom
+                      variant="p"
+                      component="div"
+                      // id="personal-statement"
+                      style={{
+                        textAlign: "left",
+                        fontFamily: "Montserrat",
+                        color: "black",
+                        fontWeight: 'bold',
+                        fontSize: '18px'
+                      }}
+                      >
             The University of Texas at Austin Red McCombs School of Business
-          </Typography>
+                    </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-            June 2016 - May 2019
+        <Typography
+                      gutterBottom
+                      variant="p"
+                      component="div"
+                      // id="personal-statement"
+                      style={{
+                        textAlign: "left",
+                        fontFamily: "Montserrat",
+                        color: "black",
+                        fontSize: '15px'
+                      }}
+                    >
+                   
+                   June 2016 - May 2019
             <br />I graduated with a BBA in Business Administration at the Red
             McCombs School of Business in May 2019 with a major in Supply Chain
             Management and a minor in Finance. I gained valuable knowledge in
             logistics, warehousing, strategic management, procurement, project
             management, and modeling/optimization. I also gained the ability to
             conduct qualitative and quantitative analyses to make optimal
-            investment and operational decisions. */
-          </Typography>
+            investment and operational decisions. 
+                    </Typography>
+
         </AccordionDetails>
       </Accordion>
     </div>

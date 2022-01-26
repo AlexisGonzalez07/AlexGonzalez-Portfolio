@@ -1,9 +1,4 @@
-import {
-  Button,
-  Icon,
-  Grid,
-  List,
-} from "semantic-ui-react";
+import { Button, Icon, Grid, List } from "semantic-ui-react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
@@ -68,7 +63,7 @@ export default function ProjectCards({ projects }) {
                       <CardMedia
                         component="img"
                         height="200"
-                        image= {work.src}
+                        image={work.src}
                         alt={work.name}
                         style={{ backgroundColor: "#4f5902" }}
                       />
@@ -93,48 +88,62 @@ export default function ProjectCards({ projects }) {
                             </Typography>
                           </List.Item>
                           <List.Item>
-                            <a target='_blank' rel="noreferrer" href={work.website}>
-                          <Button
-                            className="removegardenbtn"
-                            icon
-                            labelPosition="left"
-                            primary
-                            size="small"
-                            style={{ backgroundColor: "#4f5902", marginTop:'10px' }}
-                            // onClick={async () => {
-                            //     await handleDeletePlant(plant._id)
-                            //     await refetch()
-                            // }}
-                          >
-                            <Icon name="circle" />
-                            <Typography variant="body1" color="white">
-                              View Website
-                            </Typography>
-                          </Button>
-                          </a>
+                            <a
+                              target="_blank"
+                              rel="noreferrer"
+                              href={work.website}
+                            >
+                              <Button
+                                className="removegardenbtn"
+                                icon
+                                labelPosition="left"
+                                primary
+                                size="small"
+                                style={{
+                                  backgroundColor: "#4f5902",
+                                  marginTop: "10px",
+                                }}
+                                // onClick={async () => {
+                                //     await handleDeletePlant(plant._id)
+                                //     await refetch()
+                                // }}
+                              >
+                                <Icon name="circle" />
+                                <Typography variant="body1" color="white">
+                                  View Website
+                                </Typography>
+                              </Button>
+                            </a>
                           </List.Item>
                           <List.Item>
-                            <a target='_blank' rel="noreferrer" href={work.repo}>
-                          <Button
-                            className="removegardenbtn"
-                            icon
-                            labelPosition="left"
-                            primary
-                            size="small"
-                            style={{ backgroundColor: "#4f5902", marginTop:'10px' }}
-                            // onClick={async () => {
-                            //     await handleDeletePlant(plant._id)
-                            //     await refetch()
-                            // }}
-                          >
-                            <Icon name="circle" />
-                            <Typography variant="body1" color="white">
-                              View Repository
-                            </Typography>
-                          </Button>
-                          </a>
+                            <a
+                              target="_blank"
+                              rel="noreferrer"
+                              href={work.repo}
+                            >
+                              <Button
+                                className="removegardenbtn"
+                                icon
+                                labelPosition="left"
+                                primary
+                                size="small"
+                                style={{
+                                  backgroundColor: "#4f5902",
+                                  marginTop: "10px",
+                                }}
+                                // onClick={async () => {
+                                //     await handleDeletePlant(plant._id)
+                                //     await refetch()
+                                // }}
+                              >
+                                <Icon name="circle" />
+                                <Typography variant="body1" color="white">
+                                  View Repository
+                                </Typography>
+                              </Button>
+                            </a>
                           </List.Item>
-                          </List>
+                        </List>
                       </CardContent>
                     </CardActionArea>
                   </Card>

@@ -62,12 +62,35 @@ export default function NonCareerRelated() {
         onChange={handleChange("panel1")}
       >
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-          <Typography>
+        <Typography
+            gutterBottom
+            variant="p"
+            component="div"
+            // id="personal-statement"
+            style={{
+              textAlign: "left",
+              fontFamily: "Montserrat",
+              color: "black",
+              fontWeight: "bold",
+              fontSize: "18px",
+            }}
+          >
             Procurement & Supplier Management Case for Target - 2019
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+        <Typography
+            gutterBottom
+            variant="p"
+            component="div"
+            // id="personal-statement"
+            style={{
+              textAlign: "left",
+              fontFamily: "Montserrat",
+              color: "black",
+              fontSize: "15px",
+            }}
+          >
             <li>
               Conducted a market, price, and cost analysis of the bicycle
               industry to develop a sourcing strategy
@@ -81,6 +104,7 @@ export default function NonCareerRelated() {
               1st in the competition to earn a $600 scholarship
             </li>
           </Typography>
+
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -88,12 +112,36 @@ export default function NonCareerRelated() {
         onChange={handleChange("panel2")}
       >
         <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-          <Typography>
+          <Typography
+            gutterBottom
+            variant="p"
+            component="div"
+            // id="personal-statement"
+            style={{
+              textAlign: "left",
+              fontFamily: "Montserrat",
+              color: "black",
+              fontWeight: "bold",
+              fontSize: "18px",
+            }}
+          >
             Operations Management Practicum for Micron Technology, Inc - 2018
           </Typography>
+
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+        <Typography
+            gutterBottom
+            variant="p"
+            component="div"
+            // id="personal-statement"
+            style={{
+              textAlign: "left",
+              fontFamily: "Montserrat",
+              color: "black",
+              fontSize: "15px",
+            }}
+          >
             <li>
               Communicated with professionals via technological outlets to
               determine project scope and understand client needs
@@ -107,6 +155,7 @@ export default function NonCareerRelated() {
               inventory and increase customer satisfaction
             </li>
           </Typography>
+
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -114,10 +163,35 @@ export default function NonCareerRelated() {
         onChange={handleChange("panel3")}
       >
         <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-          <Typography>Organizational Behavior Consulting Project for Dell Medical School - 2018</Typography>
+        <Typography
+            gutterBottom
+            variant="p"
+            component="div"
+            // id="personal-statement"
+            style={{
+              textAlign: "left",
+              fontFamily: "Montserrat",
+              color: "black",
+              fontWeight: "bold",
+              fontSize: "18px",
+            }}
+          >
+Organizational Behavior Consulting Project for Dell Medical School - 2018          </Typography>
+
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+        <Typography
+            gutterBottom
+            variant="p"
+            component="div"
+            // id="personal-statement"
+            style={{
+              textAlign: "left",
+              fontFamily: "Montserrat",
+              color: "black",
+              fontSize: "15px",
+            }}
+          >
             <li>
               Led a team of business undergraduate students to reduce the flow
               time of a procurement request
@@ -131,6 +205,7 @@ export default function NonCareerRelated() {
               action-implementation plans to reduce flow time by 25%
             </li>
           </Typography>
+
         </AccordionDetails>
       </Accordion>
     </div>

@@ -62,13 +62,36 @@ export default function LanguagesAndSkills() {
         onChange={handleChange("panel1")}
       >
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-          <Typography>
+          <Typography
+            gutterBottom
+            variant="p"
+            component="div"
+            // id="personal-statement"
+            style={{
+              textAlign: "left",
+              fontFamily: "Montserrat",
+              color: "black",
+              fontWeight: "bold",
+              fontSize: "18px",
+            }}
+          >
             Languages
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-          JavaScript ES6+, CSS3, HTML5, SQL, NoSQL
+          <Typography
+            gutterBottom
+            variant="p"
+            component="div"
+            // id="personal-statement"
+            style={{
+              textAlign: "left",
+              fontFamily: "Montserrat",
+              color: "black",
+              fontSize: "15px",
+            }}
+          >
+            JavaScript ES6+, CSS3, HTML5, SQL, NoSQL
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -77,13 +100,36 @@ export default function LanguagesAndSkills() {
         onChange={handleChange("panel2")}
       >
         <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-          <Typography>
+          <Typography
+            gutterBottom
+            variant="p"
+            component="div"
+            // id="personal-statement"
+            style={{
+              textAlign: "left",
+              fontFamily: "Montserrat",
+              color: "black",
+              fontWeight: "bold",
+              fontSize: "18px",
+            }}
+          >
             Applications
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-          GitHub, MongoDB, MySQL
+          <Typography
+            gutterBottom
+            variant="p"
+            component="div"
+            // id="personal-statement"
+            style={{
+              textAlign: "left",
+              fontFamily: "Montserrat",
+              color: "black",
+              fontSize: "15px",
+            }}
+          >
+            GitHub, MongoDB, MySQL
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -92,13 +138,36 @@ export default function LanguagesAndSkills() {
         onChange={handleChange("panel3")}
       >
         <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-          <Typography>
+          <Typography
+            gutterBottom
+            variant="p"
+            component="div"
+            // id="personal-statement"
+            style={{
+              textAlign: "left",
+              fontFamily: "Montserrat",
+              color: "black",
+              fontWeight: "bold",
+              fontSize: "18px",
+            }}
+          >
             Tools
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-          Express, React, Node, Handlebars, Query, Bootstrap
+          <Typography
+            gutterBottom
+            variant="p"
+            component="div"
+            // id="personal-statement"
+            style={{
+              textAlign: "left",
+              fontFamily: "Montserrat",
+              color: "black",
+              fontSize: "15px",
+            }}
+          >
+            Express, React, Node, Handlebars, Query, Bootstrap
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -107,13 +176,36 @@ export default function LanguagesAndSkills() {
         onChange={handleChange("panel4")}
       >
         <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
-          <Typography>
-            Currently Learning..
+          <Typography
+            gutterBottom
+            variant="p"
+            component="div"
+            // id="personal-statement"
+            style={{
+              textAlign: "left",
+              fontFamily: "Montserrat",
+              color: "black",
+              fontWeight: "bold",
+              fontSize: "18px",
+            }}
+          >
+            Currently Learning
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-          Python, Redux, C#, C+
+          <Typography
+            gutterBottom
+            variant="p"
+            component="div"
+            // id="personal-statement"
+            style={{
+              textAlign: "left",
+              fontFamily: "Montserrat",
+              color: "black",
+              fontSize: "15px",
+            }}
+          >
+            Python, Redux, C#, C+
           </Typography>
         </AccordionDetails>
       </Accordion>

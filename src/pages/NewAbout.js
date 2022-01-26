@@ -84,25 +84,46 @@ export default function NewAbout() {
               sx={{ borderRight: 1, borderColor: "divider" }}
             >
               <Tab
-                style={{ color: "white" }}
+                style={{
+                  color: "#77B9F2",
+                  fontSize: "19px",
+                  fontFamily: "monospace",
+                  textTransform: "uppercase",
+                }}
                 className="tab"
                 label="Education"
                 {...a11yProps(0)}
               />
+
               <Tab
-                style={{ color: "white" }}
+                style={{
+                  color: "#77B9F2",
+                  fontSize: "19px",
+                  fontFamily: "monospace",
+                  textTransform: "uppercase",
+                }}
                 className="tab"
                 label="Technical Skills"
                 {...a11yProps(1)}
               />
               <Tab
-                style={{ color: "white" }}
+                style={{
+                  color: "#77B9F2",
+                  fontSize: "19px",
+                  fontFamily: "monospace",
+                  textTransform: "uppercase",
+                }}
                 className="tab"
                 label="Personal Interests"
                 {...a11yProps(2)}
               />
               <Tab
-                style={{ color: "white" }}
+                style={{
+                  color: "#77B9F2",
+                  fontSize: "19px",
+                  fontFamily: "monospace",
+                  textTransform: "uppercase",
+                }}
                 className="tab"
                 label="Side Projects"
                 {...a11yProps(3)}

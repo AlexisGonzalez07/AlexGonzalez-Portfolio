@@ -62,16 +62,40 @@ export default function PersonalInterests() {
         onChange={handleChange("panel1")}
       >
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-          <Typography>
-            Sports
-          </Typography>
+          <Typography
+            gutterBottom
+            variant="p"
+            component="div"
+            // id="personal-statement"
+            style={{
+              textAlign: "left",
+              fontFamily: "Montserrat",
+              color: "black",
+              fontWeight: "bold",
+              fontSize: "18px",
+            }}
+          >
+            Sports{" "}
+          </Typography>{" "}
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-          Basketball: Houston Rockets & Los Angeles Lakers<br></br>
-          Soccer: Real Madrid F.C. & Liverpool F.C.<br></br>
-          UFC: Israel Adesanya, Brandon Moreno, Julianna Peña
+        <Typography
+            gutterBottom
+            variant="p"
+            component="div"
+            // id="personal-statement"
+            style={{
+              textAlign: "left",
+              fontFamily: "Montserrat",
+              color: "black",
+              fontSize: "15px",
+            }}
+          >
+            Basketball: Houston Rockets & Los Angeles Lakers<br></br>
+            Soccer: Real Madrid F.C. & Liverpool F.C.<br></br>
+            UFC: Israel Adesanya, Brandon Moreno, Julianna Peña
           </Typography>
+
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -79,16 +103,40 @@ export default function PersonalInterests() {
         onChange={handleChange("panel2")}
       >
         <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-          <Typography>
-            Hobbies
-          </Typography>
+          <Typography
+            gutterBottom
+            variant="p"
+            component="div"
+            // id="personal-statement"
+            style={{
+              textAlign: "left",
+              fontFamily: "Montserrat",
+              color: "black",
+              fontWeight: "bold",
+              fontSize: "18px",
+            }}
+          >
+            Hobbies{" "}
+          </Typography>{" "}
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-          Lifestyle: Weightlifting, Hiking, Travel, Movies <br></br>
-          Music: Drake, Bad Bunny, Jhay Cortez, Lil Baby<br></br>
-          Online: Competitive Call of Duty, Streaming, Reddit
+        <Typography
+            gutterBottom
+            variant="p"
+            component="div"
+            // id="personal-statement"
+            style={{
+              textAlign: "left",
+              fontFamily: "Montserrat",
+              color: "black",
+              fontSize: "15px",
+            }}
+          >
+            Lifestyle: Weightlifting, Hiking, Travel, Movies <br></br>
+            Music: Drake, Bad Bunny, Jhay Cortez, Lil Baby<br></br>
+            Online: Competitive Call of Duty, Streaming, Reddit
           </Typography>
+
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -96,14 +144,41 @@ export default function PersonalInterests() {
         onChange={handleChange("panel3")}
       >
         <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-          <Typography>
-            Investments
-          </Typography>
+          <Typography
+            gutterBottom
+            variant="p"
+            component="div"
+            // id="personal-statement"
+            style={{
+              textAlign: "left",
+              fontFamily: "Montserrat",
+              color: "black",
+              fontWeight: "bold",
+              fontSize: "18px",
+            }}
+          >
+            Investments{" "}
+          </Typography>{" "}
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-          Self-Education: Udemy, FreeCodeCamp, StackOverflow <br></br>Cryptocurrency Mining: Ethereum & Bitcoin<br></br>Index Funds: QQQ Investment Fund, NASDAQ, SPY<br></br>Individual Stock Picsk: AMD, NVIDIA, AAPL, MSFT
+        <Typography
+            gutterBottom
+            variant="p"
+            component="div"
+            // id="personal-statement"
+            style={{
+              textAlign: "left",
+              fontFamily: "Montserrat",
+              color: "black",
+              fontSize: "15px",
+            }}
+          >
+            Self-Education: Udemy, FreeCodeCamp, StackOverflow <br></br>
+            Cryptocurrency Mining: Ethereum & Bitcoin<br></br>Index Funds: QQQ
+            Investment Fund, NASDAQ, SPY<br></br>Individual Stock Picsk: AMD,
+            NVIDIA, AAPL, MSFT
           </Typography>
+
         </AccordionDetails>
       </Accordion>
     </div>

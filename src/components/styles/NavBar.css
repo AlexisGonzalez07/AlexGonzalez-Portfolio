@@ -4,10 +4,11 @@
   color: white;
 }
 
-.basic-navbar-nav {
+/* #basic-navbar-nav {
   align-items: center;
   justify-content: center;
-}
+  display: inline-block;
+} */
 
 #logo {
   max-width: 150px;
@@ -18,12 +19,12 @@
   justify-content: right;
   text-align: right;
   color: white;
-  border: white dashed .05px;
+  /* border: white dashed .05px; */
 }
 
-.show {
+/* .show {
   justify-content: right;
-}
+} */
 
 .me-auto {
   justify-content: center;
@@ -49,5 +50,5 @@
 .nav-link {
 font-size: 150%;
 color: white;
-text-decoration: firebrick;
+text-decoration: underline;
 }
