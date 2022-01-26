@@ -83,7 +83,7 @@ export default function NewProjectCards({ projects }) {
         alignItems="center"
       >
         <Grid item xs={12} justifyContent='center'>
-          My Projects
+          <h1>My Projects</h1>
         </Grid>
         {projects.map((work, i) => (
           <Grid justifyContent="center" item xs={12} md={4}>
@@ -95,26 +95,27 @@ export default function NewProjectCards({ projects }) {
           <FiCardMedia
             media="picture"
             alt="Contemplative Reptile"
-            image="/material-ui-lizard.jpg"
+            image={work.src}
             title="Contemplative Reptile"
           />
           <FiCardContent className={classes.fiCardContent}>
             <Typography gutterBottom variant="h5" component="h2">
-              Lizard
+              {work.title}
             </Typography>
             <Typography
               variant="body2"
               className={classes.fiCardContentTextSecondary}
               component="p"
             >
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
+              {work.description}
             </Typography>
           </FiCardContent>
           <FiCardActions className={classes.fiCardContent}>
+          <a target='_blank' rel="noreferrer" href={work.website}>
             <Button size="small" color="inherit" variant="outlined">
-              Share
+              View Deployed App
             </Button>
+            </a>
             <Button size="small" color="inherit" variant="outlined">
               Learn More
             </Button>
