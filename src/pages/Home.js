@@ -71,7 +71,7 @@ export default function Home() {
                   fontSize: "18px",
                 }}
               >
-                Passionate and solutions-driven Full Stack Web Developer with a background in data modeling, optimization, and inventory management. Looking to develop autonomous business management solutions and improve current database management systems. Driven, collaborative, and effective leader with a proven ability to thrive in collaborative environments. My most recent and successful project was a plant tracking application built using MongoDB, React, and GraphQL. Hoping to leverage my software and business skills to create innovative tools.
+                Passionate and solutions-driven Full Stack Web Developer with a background in data modeling, optimization, and inventory management. Looking to develop autonomous business management solutions and improve current database management systems. Driven, collaborative, and effective leader with a proven ability to thrive in team environments. My most recent and successful project was a plant tracking application built using MongoDB, React, and GraphQL. Hoping to leverage my software and business skills to create innovative tools.
               </Typography>
             </Grid>
           </Grid>
