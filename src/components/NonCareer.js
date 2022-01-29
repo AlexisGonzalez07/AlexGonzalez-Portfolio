@@ -72,8 +72,15 @@ export default function NonCareerRelated() {
               fontFamily: "Montserrat",
               color: "black",
               fontWeight: "bold",
-              fontSize: "18px",
+              // fontSize: "18px",
             }}
+            fontSize={{
+              lg: 24,
+              md: 20,
+              sm: 18,
+              xs: 14
+            }}
+
           >
             Procurement & Supplier Management Case for Target - 2019
           </Typography>
@@ -88,7 +95,13 @@ export default function NonCareerRelated() {
               textAlign: "left",
               fontFamily: "Montserrat",
               color: "black",
-              fontSize: "15px",
+              // fontSize: "15px",
+            }}
+            fontSize={{
+              lg: 18,
+              md: 16,
+              sm: 14,
+              xs: 12
             }}
           >
             <li>
@@ -112,7 +125,7 @@ export default function NonCareerRelated() {
         onChange={handleChange("panel2")}
       >
         <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-          <Typography
+        <Typography
             gutterBottom
             variant="div"
             component="div"
@@ -122,8 +135,15 @@ export default function NonCareerRelated() {
               fontFamily: "Montserrat",
               color: "black",
               fontWeight: "bold",
-              fontSize: "18px",
+              // fontSize: "18px",
             }}
+            fontSize={{
+              lg: 20,
+              md: 20,
+              sm: 16,
+              xs: 14
+            }}
+
           >
             Operations Management Practicum for Micron Technology, Inc - 2018
           </Typography>

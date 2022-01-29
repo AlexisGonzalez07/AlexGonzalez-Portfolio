@@ -1,9 +1,10 @@
 import React from "react";
 import "./styles/home.css";
 import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid";
+// import Grid from "@mui/material/Grid";
 import { styled } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
+import {Grid} from 'semantic-ui-react'
 
 const Img = styled("img")({
   margin: "auto",
@@ -64,11 +65,17 @@ export default function Home() {
                 component="div"
                 id="personal-statement"
                 style={{
-                  textAlign: "center",
+                  textAlign: "left",
                   fontFamily: "Montserrat",
                   color: "white",
                   fontWeight: "bold",
-                  fontSize: "18px",
+                  // fontSize: "18px",
+                }}
+                fontSize={{
+                  lg: 20,
+                  md: 16,
+                  sm: 14,
+                  xs: 12
                 }}
               >
                 Passionate and solutions-driven Full Stack Web Developer with a background in data modeling, optimization, and inventory management. Looking to develop autonomous business management solutions and improve current database management systems. Driven, collaborative, and effective leader with a proven ability to thrive in team environments. My most recent and successful project was a plant tracking application built using MongoDB, React, and GraphQL. Hoping to leverage my software and business skills to create innovative tools.
