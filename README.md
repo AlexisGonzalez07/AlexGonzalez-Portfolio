@@ -29,7 +29,7 @@ The development code for this site can be found in this repo: https://github.com
 This app requires no installation.
 
 ## Usage <a name='usage'></a>
-Live Website: https://alex-gonzalez-portfolio.herokuapp.com/
+Live Website: https://alex-gonzalez-portfolio.netlify.app/
 
 Hire Me?
 
